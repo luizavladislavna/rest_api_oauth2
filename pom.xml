@@ -28,6 +28,13 @@
 			</dependency>
 
 			<dependency>
+				<groupId>com.digi</groupId>
+				<artifactId>rest-aws-s3</artifactId>
+				<version>${rest.core.project.version}</version>
+			</dependency>
+
+
+			<dependency>
 				<groupId>com.zaxxer</groupId>
 				<artifactId>HikariCP</artifactId>
 				<version>2.4.7</version>
@@ -51,6 +58,15 @@
 				<version>6.8</version>
 				<scope>test</scope>
 			</dependency>
+
+
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>1.7.21</version>
+			</dependency>
+
+
 
 		</dependencies>
 	</dependencyManagement>
@@ -100,7 +116,7 @@
 
 
 	<properties>
-
+		<aws-java-sdk-version>1.7.1</aws-java-sdk-version>
 		<!-- Spring -->
 
 		<!-- marshalling -->

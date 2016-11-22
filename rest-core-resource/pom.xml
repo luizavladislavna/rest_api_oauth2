@@ -16,6 +16,10 @@
             <groupId>com.digi</groupId>
             <artifactId>rest-core-db</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.digi</groupId>
+            <artifactId>rest-aws-s3</artifactId>
+        </dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -78,7 +82,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
-
         </dependency>
 
     </dependencies>
