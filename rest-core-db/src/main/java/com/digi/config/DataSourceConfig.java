@@ -24,8 +24,8 @@ import java.sql.SQLException;
 
 @Configuration
 @ConfigurationProperties(prefix = "datasource")
-@PropertySource( value = "classpath:application-datasource.properties")
-@EnableJpaRepositories(basePackageClasses=ResourcesSqlRepository.class)
+@PropertySource(value = "classpath:application-datasource.properties")
+@EnableJpaRepositories(basePackageClasses = ResourcesSqlRepository.class)
 public class DataSourceConfig extends HikariConfig {
 
     @Value("classpath:schema.sql")
@@ -44,8 +44,9 @@ public class DataSourceConfig extends HikariConfig {
         initializer.setDatabasePopulator(databasePopulator());
         return initializer;
     }
+
     // JDBC token store configuration
-    private DatabasePopulator databasePopulator () {
+    private DatabasePopulator databasePopulator() {
         final
         ResourceDatabasePopulator populator = new ResourceDatabasePopulator();
         populator.addScript(schemaScript);

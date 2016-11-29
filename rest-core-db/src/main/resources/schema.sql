@@ -50,8 +50,8 @@ create table if not exists oauth_approvals (
 	clientId VARCHAR(255),
 	scope VARCHAR(255),
 	status VARCHAR(10),
-	expiresAt TIMESTAMP,
-	lastModifiedAt TIMESTAMP
+	expiresAt timestamp null default null,
+	lastModifiedAt timestamp null default null
 );
 
 create table if not exists ClientDetails (
